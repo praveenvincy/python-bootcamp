@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>QUOTES</title>
+    </head>
+    <body>
+        <h1>  welcome </h1>
+        {% if quote %}
+        <h2>{{quote}}</h2>
+        {% else %}
+        <h2> no quote available</h2>
+        {% endif %}
+        <ul>
+            {% for fruit in fruits %}
+            <li> {{fruit}}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
